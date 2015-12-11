@@ -1,7 +1,5 @@
-import datamodels.Task;
-
+import models.TaskModel;
 import org.junit.Test;
-
 import play.data.Form;
 import play.libs.ws.WS;
 import play.mvc.Result;
@@ -22,7 +20,7 @@ public class ApplicationTest {
     public void indexTemplate() {
         running(fakeApplication(), new Runnable() {
             public void run() {
-                Form<Task> form = Form.form(Task.class);
+                Form<TaskModel> form = Form.form(TaskModel.class);
                 Html html = views.html.index.render(form);
                 assertThat(contentType(html)).isEqualTo("text/html");
                 assertThat(contentAsString(html)).contains("Welcome");
