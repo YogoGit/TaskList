@@ -14,8 +14,8 @@ public class TaskTest extends AbstractTransactionalJUnit4SpringContextTests {
     @Test
     public void setTaskDescription() {
         Task task = new Task();
-        task.description = "foo";
-        assertThat(task.description).isEqualTo("foo");
+        task.setDescription("foo");
+        assertThat(task.getDescription()).isEqualTo("foo");
     }
 
 }

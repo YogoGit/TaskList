@@ -23,9 +23,9 @@ public class TaskServiceTest extends AbstractTransactionalJUnit4SpringContextTes
     @Test
     public void createTask() {
         Task task = new Task();
-        task.description = "foo";
+        task.setDescription("foo");
         taskService.addTask(task);
-        assertThat(task.id).isNotNull();
+        assertThat(task.getId()).isNotNull();
     }
 
     @Test
