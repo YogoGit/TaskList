@@ -1,0 +1,18 @@
+@(form: play.data.Form[Task])
+
+@main("Welcome to Play 2.0") {
+    <script src="@routes.Assets.at("javascripts/index.js")" type="text/javascript"></script>
+    <ul id="tasks"></ul>
+@if(form.hasGlobalErrors) {
+    <div class="alert alert-danger">
+	    <p class="small">
+	        <span class="error">@Messages(form.globalError.message)</span>
+        </p>
+    </div>
+}  
+@helper.form(action = routes.Application.addTask) {
+@helper.inputText(form("description"))
+        <input type="submit"/>
+    }
+
+}
