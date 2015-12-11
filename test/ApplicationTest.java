@@ -1,5 +1,7 @@
-import models.Task;
+import datamodels.Task;
+
 import org.junit.Test;
+
 import play.data.Form;
 import play.libs.ws.WS;
 import play.mvc.Result;

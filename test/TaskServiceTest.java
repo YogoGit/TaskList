@@ -1,10 +1,13 @@
 import configs.AppConfig;
-import models.Task;
+
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;
+
 import services.TaskService;
+
+import datamodels.Task;
 
 import java.util.List;
 

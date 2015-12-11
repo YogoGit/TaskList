@@ -1,9 +1,10 @@
 import configs.AppConfig;
-import models.Task;
+
+import datamodels.Task;
+
 import org.junit.Test;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;
-
 import static org.fest.assertions.Assertions.assertThat;
 
 @ContextConfiguration(classes = {

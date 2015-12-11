@@ -5,18 +5,18 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-import org.springframework.orm.jpa.vendor.HibernateJpaDialect;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import javax.persistence.EntityManagerFactory;
-import javax.sql.DataSource;
-
-import play.Logger;
 import play.Play;
 
 import java.util.HashMap;
+
+import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
+
+
 
 @Configuration
 @EnableTransactionManagement
@@ -28,7 +28,7 @@ public class DataConfig {
         vendorAdapter.setShowSql(true);
         vendorAdapter.setGenerateDdl(true);
         LocalContainerEntityManagerFactoryBean entityManagerFactory = new LocalContainerEntityManagerFactoryBean();
-        entityManagerFactory.setPackagesToScan("models");
+        entityManagerFactory.setPackagesToScan("datamodels");
         entityManagerFactory.setJpaVendorAdapter(vendorAdapter);
         entityManagerFactory.setDataSource(dataSource());
         entityManagerFactory.setJpaPropertyMap(new HashMap<String, String>() {
@@ -47,6 +47,19 @@ public class DataConfig {
         return transactionManager;
     }
 
+    /**
+     * Returns a new {@link DataSource} instance configured through the applications configuration. Properties which are expected to
+     * have values are as follows:
+     *
+     * <pre>
+     * db.default.driver
+     * db.default.url
+     * db.default.user
+     * db.default.password
+     * </pre>
+     *
+     * @return
+     */
     @Bean
     public DataSource dataSource() {
         final DriverManagerDataSource dataSource = new DriverManagerDataSource();
