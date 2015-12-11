@@ -1,10 +1,11 @@
-package com.sofi.tasklist.controllers.utils;
+package controllers;
 
-import com.sofi.tasklist.viewmodels.TaskModel;
+//import com.sofi.tasklist.viewmodels.TaskModel;
 
 import models.Task;
+import models.TaskModel;
 
-import scala.tools.jline_embedded.internal.Preconditions;
+//import scala.tools.jline_embedded.internal.Preconditions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +17,7 @@ import java.util.List;
 public class ModelMapper {
 
     public static Task viewModelToModel(TaskModel viewModel) {
-        Preconditions.checkNotNull(viewModel);
+//        Preconditions.checkNotNull(viewModel);
         Task mappedTask = new Task();
         mappedTask.setDescription(viewModel.getDescription());
         mappedTask.setId(viewModel.getId());
@@ -24,7 +25,7 @@ public class ModelMapper {
     }
 
     public static  List<Task> viewModelsToModels(List<TaskModel> viewModels) {
-        Preconditions.checkNotNull(viewModels);
+//        Preconditions.checkNotNull(viewModels);
         List<Task> tasks = new ArrayList<Task>();
         for (TaskModel viewModel : viewModels) {
             tasks.add(viewModelToModel(viewModel));
@@ -33,7 +34,7 @@ public class ModelMapper {
     }
 
     public static  TaskModel modelToViewModel(Task model) {
-        Preconditions.checkNotNull(model);
+ //       Preconditions.checkNotNull(model);
         TaskModel taskModel = new TaskModel();
         taskModel.setDescription(model.getDescription());
         taskModel.setId(model.getId());
@@ -41,7 +42,7 @@ public class ModelMapper {
     }
 
     public static  List<TaskModel> modelsToViewModels(List<Task> models) {
-        Preconditions.checkNotNull(models);
+  //      Preconditions.checkNotNull(models);
         List<TaskModel> viewModels = new ArrayList<TaskModel>();
         for (Task model : models) {
             viewModels.add(modelToViewModel(model));

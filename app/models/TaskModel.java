@@ -1,4 +1,4 @@
-package app.models;
+package models;
 
 import play.data.validation.Constraints;
 import play.data.validation.Constraints.MaxLength;

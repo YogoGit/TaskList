@@ -1,0 +1,58 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/Users/afrieze/git/sofi-homework/app/Global.java)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidated products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/afrieze/git/sofi-homework/app/Global.java)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/afrieze/git/sofi-homework/app/Global.java)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Java source to /Users/afrieze/git/sofi-homework/app/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mAttempting to call com.sun.tools.javac.api.JavacTool@5007110f directly...[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:1: package configs does not exist[0m
+[0m[[31merror[0m] [0mconfigs.AppConfig[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:2: package configs does not exist[0m
+[0m[[31merror[0m] [0mconfigs.DataConfig[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:4: package org.springframework.context does not exist[0m
+[0m[[31merror[0m] [0morg.springframework.context.ApplicationContext[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:5: package org.springframework.context.annotation does not exist[0m
+[0m[[31merror[0m] [0morg.springframework.context.annotation.AnnotationConfigApplicationContext[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:7: package play does not exist[0m
+[0m[[31merror[0m] [0mplay.Application[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:8: package play does not exist[0m
+[0m[[31merror[0m] [0mplay.GlobalSettings[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:10: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol: class GlobalSettings[0m
+[0m[[31merror[0m] [0mGlobalSettings[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:12: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol:   class ApplicationContext[0m
+[0m[[31merror[0m] [0m  location: class Global[0m
+[0m[[31merror[0m] [0mApplicationContext[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:15: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol:   class Application[0m
+[0m[[31merror[0m] [0m  location: class Global[0m
+[0m[[31merror[0m] [0mApplication[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:14: method does not override or implement a method from a supertype[0m
+[0m[[31merror[0m] [0m@Override[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:16: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol:   class AnnotationConfigApplicationContext[0m
+[0m[[31merror[0m] [0m  location: class Global[0m
+[0m[[31merror[0m] [0mAnnotationConfigApplicationContext[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:16: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol:   class AppConfig[0m
+[0m[[31merror[0m] [0m  location: class Global[0m
+[0m[[31merror[0m] [0mAppConfig[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:16: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol:   class DataConfig[0m
+[0m[[31merror[0m] [0m  location: class Global[0m
+[0m[[31merror[0m] [0mDataConfig[0m
+[0m[[31merror[0m] [0m/Users/afrieze/git/sofi-homework/app/Global.java:19: method does not override or implement a method from a supertype[0m
+[0m[[31merror[0m] [0m@Override[0m
+[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) javac returned nonzero exit code[0m
