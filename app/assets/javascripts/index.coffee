@@ -1,4 +1,4 @@
 $ ->
   $.get "/tasks", (data) ->
     $.each data, (index, item) ->
-      $("#tasks").append "<li>Task " + item.description + "</li>"
+      $("#tasks").append "<tr><td>" + item.id + "</td><td>" + item.description + "</td></tr>"

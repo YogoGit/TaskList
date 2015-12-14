@@ -52,6 +52,7 @@ public class Application {
         logger.trace("Application | addTask");
         Form<TaskModel> form = Form.form(TaskModel.class).bindFromRequest();
         if (form.hasErrors()) {
+            logger.trace("Application | badRequest");
             return play.mvc.Controller.badRequest(index.render(form));
         }
         TaskModel task = form.get();
